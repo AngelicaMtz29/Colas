@@ -5,6 +5,9 @@ import javafx.scene.control.Alert;
 public class Cola {
     private Nodo frente=null;
     //constructor simple
+    public int size=0;
+
+
     public Cola() {
 
         this.frente=null;
@@ -26,6 +29,7 @@ public class Cola {
             }
             temp.setProx(nuevo);
         }
+        size++;
     }
     //Método para mostrar los elementos de la cola
     public  void mostrar(){
@@ -47,8 +51,13 @@ public class Cola {
         }else {
             int valorExtraer=frente.getValor();
             frente=frente.getProximo();
+            size--;
             return valorExtraer;
         }
+    }
+
+    public int getsize(){
+        return size;
     }
 
     public void buscar(int busqueda) {

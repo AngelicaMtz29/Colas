@@ -23,6 +23,9 @@ public class Controller implements Initializable{
     @FXML
     HBox colasHbx;
 
+    @FXML
+    Label sizeLbl;
+
 
     Cola cola = new Cola();
 
@@ -35,6 +38,7 @@ public class Controller implements Initializable{
             public void handle(ActionEvent event) {
                 cola.insertar(Integer.parseInt(valorTxt.getText()));
                 cola.mostrar();
+                sizeLbl.setText(String.valueOf(cola.getsize()));
 
                 HBox hBox = new HBox(8);
                 hBox.setPrefSize(20,20);
@@ -50,7 +54,7 @@ public class Controller implements Initializable{
                 separador.setOpacity(0);
                 separador.setMaxWidth(60);
 
-
+                valorTxt.clear();
             }
         });
 
@@ -66,8 +70,18 @@ public class Controller implements Initializable{
                  cola.vaciar();
                  cola.mostrar();
                  colasHbx.getChildren().clear();
+                 sizeLbl.setText(cola.getsize()+"");
              }
          });
+
+        this.EliminarBtn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                cola.extraer();
+                colasHbx.getChildren().remove(0);
+                sizeLbl.setText(cola.getsize()+"");
+            }
+        });
 
     }
 }
