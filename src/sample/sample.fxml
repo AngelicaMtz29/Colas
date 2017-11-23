@@ -52,7 +52,7 @@
                      <children>
                         <ImageView cache="true" disable="true" fitHeight="103.0" fitWidth="147.0" focusTraversable="true" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
                            <image>
-                              <Image url="@../../supermarket-cashier-avatar-icon-illustration-design-84451609.jpg" />
+                              <Image url="@../imagen/cajera.jpg" />
                            </image>
                         </ImageView>
                               <HBox fx:id="colasHbx" prefHeight="103.0" prefWidth="872.0" style="-fx-background-color: white;">

@@ -12,9 +12,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="906.0" style="-fx-background-color: #6AC6F7;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="1058.0" style="-fx-background-color: #6AC6F7;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
     <children>
-        <VBox layoutX="25.0" layoutY="31.0" prefHeight="429.0" prefWidth="845.0">
+        <VBox layoutX="25.0" layoutY="31.0" prefHeight="429.0" prefWidth="996.0">
             <children>
                 <HBox prefHeight="89.0" prefWidth="650.0" style="-fx-background-color: #6AC6F7;">
                     <children>
@@ -46,16 +46,16 @@
                   <Insets bottom="30.0" left="10.0" right="10.0" />
                </VBox.margin>
                 </HBox>
-                <VBox prefHeight="142.0" prefWidth="695.0">
+                <VBox prefHeight="132.0" prefWidth="879.0">
                     <children>
                   <HBox prefHeight="100.0" prefWidth="200.0">
                      <children>
                         <ImageView cache="true" disable="true" fitHeight="103.0" fitWidth="147.0" focusTraversable="true" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
                            <image>
-                              <Image url="@../../supermarket-cashier-avatar-icon-illustration-design-84451609.jpg" />
+                              <Image url="@../imagen/cajera.jpg" />
                            </image>
                         </ImageView>
-                              <HBox fx:id="colasHbx" prefHeight="103.0" prefWidth="737.0" style="-fx-background-color: white;">
+                              <HBox fx:id="colasHbx" prefHeight="103.0" prefWidth="872.0" style="-fx-background-color: white;">
                            <HBox.margin>
                               <Insets left="20.0" />
                            </HBox.margin>
