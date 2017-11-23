@@ -26,8 +26,6 @@ public class Controller implements Initializable{
     @FXML
     HBox ColaHbx;
 
-   
-    Cola cola = new Cola();
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
