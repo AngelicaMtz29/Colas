@@ -1,6 +1,5 @@
 ﻿package sample;
-
-import javafx.scene.control.Label;
+import java.net.*;
 
 public class Cola {
     private Nodo frente=null;

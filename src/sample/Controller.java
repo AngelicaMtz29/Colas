@@ -1,16 +1,11 @@
 ﻿package sample;
 
-import com.sun.javafx.scene.layout.region.Margins;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.geometry.Insets;
-import javafx.geometry.Orientation;
-import javafx.geometry.Pos;
-import javafx.geometry.VerticalDirection;
 import javafx.scene.control.*;
-import javafx.scene.layout.AnchorPane;
+import java.net.*;
 import javafx.scene.layout.HBox;
 
 import java.net.URL;
@@ -54,13 +49,14 @@ public class Controller implements Initializable{
 
             }
         });
-
+        /*
         this.BuscarBtn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
                 cola.buscar(Integer.parseInt(valorTxt.getText()));
             }
         });
+        */
 
         this.VaciarBtn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
