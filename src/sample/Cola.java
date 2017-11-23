@@ -51,5 +51,12 @@ public class Cola {
         }
     }
 
+    public void vaciar(){
+
+        frente = null;
+
+    }
+
+
 
 }
