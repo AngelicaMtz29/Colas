@@ -22,9 +22,9 @@ public class Controller implements Initializable{
     @FXML
     Button InsertarBtn, BuscarBtn, EliminarBtn, VaciarBtn,TamañoBtn ;
     @FXML
-    TextField ValorTxt;
+    TextField valorTxt;
     @FXML
-    HBox ColaHbx;
+    HBox colasHbx;
 
    
     Cola cola = new Cola();
@@ -52,9 +52,6 @@ public class Controller implements Initializable{
                 separator.setOpacity(0);
                 separador.setMaxWidth(30);
 
-                Color seletedColor = colorPicker.getValue();
-                hBox.setBackground(new Background(new BackgroundFill(Paint.valueOf(seletedColor.toString()), CornerRadii.EMPTY, Insets.EMPTY)));
-
             }
         });
 
@@ -65,7 +62,14 @@ public class Controller implements Initializable{
             }
         });
 
-
+        this.VaciarBtn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                cola.vaciar();
+                cola.mostrar();
+                colasHbx.getChildren().clear();
+            }
+        });
        
 
     }
