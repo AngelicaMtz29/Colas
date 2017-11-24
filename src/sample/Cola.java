@@ -35,13 +35,18 @@ public class Cola {
     public  void mostrar(){
         if(frente!=null){
             Nodo temp=frente;
-            System.out.println("Los valores de la cola son: ");
+            //System.out.println("Los valores de la cola son: ");
             while (temp!=null){
-                System.out.println(temp.getValor());
+               // System.out.println(temp.getValor());
                 temp=temp.getProximo();
             }
         }else{
-            System.out.println("La cola esta vacía");
+            Alert alert=new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("AVISO");
+            alert.setHeaderText("Estado de la cola:");
+            alert.setContentText("La cola se encuentra vacía");
+            alert.showAndWait();
+
         }
     }
     //Método para extraer el elemento del frente
@@ -59,6 +64,9 @@ public class Cola {
     public int getsize(){
         return size;
     }
+    public  int setsize(int valor){
+        return  valor;
+    }
 
     public void buscar(int busqueda) {
 
@@ -68,11 +76,15 @@ public class Cola {
 
 
             if (temp.getValor() == busqueda) {
-                System.out.println("El valor esta en la posición 0");
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Mensaje");
+                alert.setHeaderText("Encontrado");
+                alert.setContentText("valor en la posicion: 0");
+                alert.showAndWait();
             } else {
                 while (temp != null) {
                     if (temp.getProximo().getValor() == busqueda) {
-                        Alert alert = new Alert(Alert.AlertType.ERROR);
+                        Alert alert = new Alert(Alert.AlertType.INFORMATION);
                         alert.setTitle("Mensaje");
                         alert.setHeaderText("Encontrado");
                         alert.setContentText("valor en la posicion:" + posicion);
@@ -96,6 +108,6 @@ public class Cola {
     public void vaciar(){
 
         frente = null;
-
+        size=0;
     }
 }
